@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: rgb(41, 46, 41);
+    color: white;
+}
+:root{
+    --primary-color: #6C63FF;
+    --off-white: #F3F4F6;
+}
+
+
+/* common part for all section */
+.navigation{
+    background-color: var(--primary-color);
+    padding: 1.5rem 1rem;
+}
+.list-inline{
+    display: inline;
+    padding: 0.5rem;
+}
+.list {
+    text-decoration: none;
+    color:var(--off-white);
+}
+.list-non-bullets {
+    padding-inline-start: 0px;
+}
+.link-active{
+    font-weight: bolder;
+}
+
+header{
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
+p{
+    font-size: 1.1rem;
+}
+label{
+    text-align: start;
+}
+.label-start{
+    text-align: start;
+    margin-left: 2rem;
+    padding: 0rem 3rem;
+}
+
+#submit-btn{
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 2rem 0rem 0rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--off-white);
+    font-size: large;
+    border: none;
+}
+.output{
+    display: none;
+    font-size:larger;
+    font-weight: bolder;
+    text-align: center;
+    border: 2px solid var(--primary-color);
+    padding: 1rem;
+    margin: 2rem 0rem 3rem 4rem;
+}
+.footer {
+    margin-top: 2rem;
+    color: white;
+    padding: 1rem;
+}
+.txt-footer {
+    text-align: center;
+}
