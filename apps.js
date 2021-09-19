@@ -1,5 +1,5 @@
+const form= document.getElementById("istriangle-form");
 const inputs = document.querySelectorAll(".angle-input");
-const checkBtn = document.querySelector("#check-btn");
 const output = document.querySelector(".output");
 
 function calculateSumOfAngles(angle1, angle2, angle3) {
@@ -8,7 +8,8 @@ function calculateSumOfAngles(angle1, angle2, angle3) {
 }
 
 
-function isTriangle() {
+function isTriangle(e) {
+    e.preventDefault();
     const sumOfAngles = calculateSumOfAngles(Number(inputs[0].value), Number(inputs[1].value), Number(inputs[2].value));
 
     if (sumOfAngles === 180) {
@@ -22,4 +23,4 @@ function isTriangle() {
 
 
 
-checkBtn.addEventListener("click", isTriangle)
+form.addEventListener("submit", isTriangle)
